@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://www.yourdomain.tld`,
-    title: "My First Gatsby Site",
+    title: "My Gatsby Tutorial Site",
   },
   plugins: [
     "gatsby-plugin-image",
@@ -18,5 +18,11 @@ module.exports = {
     },
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/images/icon.png",
+      },
+    },
   ],
 };
